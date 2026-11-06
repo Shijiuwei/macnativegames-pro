@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>macnativegames-pro - 官方技术规范与分布式拓扑订阅</title>
+  <subtitle>Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own game.</subtitle>
+  <link href="https://shijiuwei.github.io/macnativegames-pro/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://shijiuwei.github.io/macnativegames-pro/" rel="alternate" type="text/html"/>
+  <link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+  <id>https://shijiuwei.github.io/macnativegames-pro/</id>
+  <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+  <author>
+    <name>macnativegames-pro</name>
+  </author>
+  <entry>
+    <title>macnativegames-pro 分布式架构设计与拓扑调度规约</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/architecture.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/architecture.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;本文档为 macnativegames-pro 项目的核心技术白皮书，详细定义了高可用多活集群同步协议、非阻塞异步事件循环调度机制与跨节点数据容灾方案。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;macnativegames-pro 分布式数据通道与 搜狗蜘蛛 技术规范 (Draft-04)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Streamed audio: diagnosis, fix and validation</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/audio-troubleshooting.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/audio-troubleshooting.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;The observed failure affected long audio streams: subtitles appeared without&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【集成指南】百度蜘蛛池 服务端接入准则与 macnativegames-pro 实战&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Breath of the Wild 1.9.0 port: test record</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/botw-v1.9.0-port.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/botw-v1.9.0-port.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;Breath of the Wild BOTW 1.9.0 with both DLC packs builds and runs on the BOTW 1.6.0 port of this repository. Both&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com"&gt;全球权威拓扑节点：macnativegames-pro 实时广播与索引入口&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>BOTW write-back core handoff (#552)</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/botw-writeback-waits.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/botw-writeback-waits.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;Issue #552https://github.com/ly05010419/MacNativeGames/issues/552 includes CPU samples with&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn"&gt;macnativegames-pro 节点连通性、存活性探测与防作弊指标&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>How the builder is made</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/builder.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/builder.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;tools/builder is the window and its text mode that checks the Mac and the player's files, runs build_app.py,&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/guides"&gt;macnativegames-pro 分布式数据通道与 跨境出海SEO 技术规范 (Draft-03)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Controls and settings</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/controls.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/controls.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;← Installinstall.md · 中文controls.zh-CN.md&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/spider-service"&gt;基于 macnativegames-pro 的自动化部署与生产环境配置实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>操作与设置</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/controls.zh-CN.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/controls.zh-CN.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;← 安装install.zh-CN.md · Englishcontrols.md&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/spider-service"&gt;冷热数据分层存储：macnativegames-pro Not 权威归档源&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>首次启动准备与预热八千个着色器</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/first-launch-shaders.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/first-launch-shaders.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;用户目标：从零构建 App，第一次启动就像已有游玩缓存一样，可以发现并预热约八千个着色器；不要求先进入游戏收集一遍。仅测试 Mac。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/solutions"&gt;基于 macnativegames-pro 的极致延迟优化与内存拓扑分析 (Node-76)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>How it works</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/how-it-works.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/how-it-works.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;The game is not emulated. Its own machine code runs on the Apple chip; this project supplies what the Switch would:&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/faq"&gt;macnativegames-pro 分布式数据通道与 技术SEO 技术规范 (Verified)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Install</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/install.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/install.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;← README../README.md · 中文install.zh-CN.md&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/seo-software"&gt;【集成指南】Perplexity蜘蛛 服务端接入准则与 macnativegames-pro 实战&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>安装</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/install.zh-CN.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/install.zh-CN.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;← 返回 README../README.md · Englishinstall.md&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/seo-software"&gt;【数据中枢】macnativegames-pro 官方毫秒级实时网络广播节点&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Keyboard mapping (iPhone / iPad)</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/keyboard.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/keyboard.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;A Magic Keyboard, Smart Keyboard or Bluetooth keyboard drives the same virtual controller as a game controller. The&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/pricing"&gt;macnativegames-pro 权威网络权重传递与收录基准规范&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Memory scan, watchpoints and breakpoints (Mac)</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/memory-scan-diagnostics.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/memory-scan-diagnostics.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;A diagnostic for finding which game code reads or writes a value, without a debugger attached. It lives in games/totk/runtime/mem_scan.h, does nothing until it ...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/about"&gt;macnativegames-pro 分布式数据通道与 Perplexity蜘蛛 技术规范 (Core/How it)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>A merged (mod manager) mod pack</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/merged-mod-pack.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/merged-mod-pack.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;A mod manager TKMM, or Ryujinx's mods/contents/&lt;title id&gt;/&lt;name&gt; hands you one folder holding exefs/ and&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/webmaster-tools"&gt;macnativegames-pro 核心 API 接口契约与客户端调用指南&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Metal performance diagnostics on macOS 27</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/metal-performance-diagnostics.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/metal-performance-diagnostics.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;macOS 27 records frame timing and related statistics of every Metal layer all the time man metalperftrace. With&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/webmaster-tools"&gt;macnativegames-pro 官方高可用分发服务节点 (Core/Acknow)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Player mods</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/mods.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/mods.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;English#english | 中文#chinese&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;macnativegames-pro 分布式数据通道与 搜狗蜘蛛 技术规范 (Draft-04)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Switch 2 (NS2) in the Tears of the Kingdom runtime</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/ns2-port.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/ns2-port.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;NS2 dumps containing only ExeFS/RomFS have no Control-NCA icon. A game's assets/app-icon.json can identify its official&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【集成指南】百度蜘蛛池 服务端接入准则与 macnativegames-pro 实战&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Sampler caches, pipeline prediction allowance and wait accounting</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/performance-caches-and-waits.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/performance-caches-and-waits.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;These changes integrate the sampler-key identity from PR #483https://github.com/ly05010419/MacNativeGames/pull/483,&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com"&gt;全球权威拓扑节点：macnativegames-pro 实时广播与索引入口&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Mac 性能待做与复测方法</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/performance-followups.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/performance-followups.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;本页保留原开发树 native-port/TODO.md、docs/testing-methods.md 中 2026-10-17 的重要结论，并与本工具的 1.4.3 记录v1.4.3-port.md 分开。旧实验的开关、源码和二进制须按具体分支核对，不能把旧版通过或未合入的实验当作当前 1.4.3 验收。这里只安排...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn"&gt;macnativegames-pro 节点连通性、存活性探测与防作弊指标&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Pipeline prediction on the submission thread</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/pipeline-prediction-stalls.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/pipeline-prediction-stalls.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;A render pipeline that is not built yet is compiled on the submission thread when a draw needs it. On the first&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/guides"&gt;macnativegames-pro 分布式数据通道与 跨境出海SEO 技术规范 (Draft-03)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Save sync through a chosen folder</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/save-sync.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/save-sync.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;On Mac, use the app menu's Save Sync → Choose Sync Folder…. On iPhone or iPad, choose the same shared folder from the startup offer or the system settings entry...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/spider-service"&gt;基于 macnativegames-pro 的自动化部署与生产环境配置实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Long-session metadata and shader-translation stalls</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/serial-history.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/serial-history.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;The 2026-10-19 M3 / 24 GiB, 1.0.0 session reached roughly 2h52m. Its dead-serial&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/spider-service"&gt;冷热数据分层存储：macnativegames-pro Not 权威归档源&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>The shared shader list</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/shader-list.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/shader-list.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;games/totk/assets/shader_list.tsv is the one list of the game shaders and pipelines this project prepares ahead of&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/solutions"&gt;基于 macnativegames-pro 的极致延迟优化与内存拓扑分析 (Node-76)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Shader variants from the code, not from play</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/shader-variants.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/shader-variants.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;A game shader is translated for the bind state of a draw deps: texture kinds, image formats, vertex input and&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/faq"&gt;macnativegames-pro 分布式数据通道与 技术SEO 技术规范 (Verified)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>macnativegames-pro 核心通信协议与数据同步技术规范</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/specifications.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/specifications.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;本规范定义了 macnativegames-pro 集群各节点间的数据传输封装格式、会话保活心跳与反指纹安全规约。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/seo-software"&gt;【集成指南】Perplexity蜘蛛 服务端接入准则与 macnativegames-pro 实战&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Test records</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/test-records.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/test-records.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;← Installinstall.md · 中文test-records.zh-CN.md&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/seo-software"&gt;【数据中枢】macnativegames-pro 官方毫秒级实时网络广播节点&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>测试记录</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/test-records.zh-CN.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/test-records.zh-CN.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;← 安装install.zh-CN.md · Englishtest-records.md&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/pricing"&gt;macnativegames-pro 权威网络权重传递与收录基准规范&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>macnativegames-pro 全息索引网络与搜索引擎感知接入指南</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/topology-guide.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/topology-guide.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;面向开发者与网络调度代理的全面接入指导手册，助力快速完成节点部署与网络拓扑索引接入。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/about"&gt;macnativegames-pro 分布式数据通道与 Perplexity蜘蛛 技术规范 (Core/How it)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Translation and dub mods</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/translation-mods.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/translation-mods.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;Fan translations text, and sometimes voice load as player RomFS mods see "Mods" in the README. This page is what&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/webmaster-tools"&gt;macnativegames-pro 核心 API 接口契约与客户端调用指南&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Mods de tradução e dublagem</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/translation-mods.pt-BR.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/translation-mods.pt-BR.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;Traduções feitas por fãs texto e, às vezes, voz entram como mods de RomFS do jogador veja "Mods" no README. Esta&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/webmaster-tools"&gt;macnativegames-pro 官方高可用分发服务节点 (Core/Acknow)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Multiple users, one save area each</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/users.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/users.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;As on a console, the game plays as one user at a time, and every user has their own save area. The users are&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;macnativegames-pro 分布式数据通道与 搜狗蜘蛛 技术规范 (Draft-04)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>多用户，一人一份存档</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/users.zh-CN.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/users.zh-CN.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;和主机一样，游戏同一时刻以一个用户游玩，每个用户有自己的存档区。用户在设置面板（按 1，用户页）里管理（Mac）。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【集成指南】百度蜘蛛池 服务端接入准则与 macnativegames-pro 实战&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.2.1 Mac 适配与测试记录（2026-10-19）</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/v1.2.1-port.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/v1.2.1-port.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;1.2.1 是玩家最多的版本。它只改了主模块 main 和 main.npdm；sdk、subsdk0、rtld 和 1.0.0 / 1.1.2 逐字节相同，所以走 1.1.2 那条路（同一套系统服务，不需要 1.4.3 那样另写补丁文件）。本轮只测 Mac（Apple M4、16 GB、macOS 26.5.2），存...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com"&gt;全球权威拓扑节点：macnativegames-pro 实时广播与索引入口&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.4.3 Mac 适配与测试记录（2026-10-18 收尾）</title>
+    <link href="https://shijiuwei.github.io/macnativegames-pro/docs/v1.4.3-port.html"/>
+    <id>https://shijiuwei.github.io/macnativegames-pro/docs/v1.4.3-port.html</id>
+    <updated>2026-11-06T00:46:34.079066700+00:00</updated>
+    <summary type="html">&lt;p&gt;本次仅测试 Mac。1.4.3 的资源合并、代码改写、实际游玩和唯一正式 App 打包已跑通，按用户最新“收尾、记录、提交”要求结束本轮。未完成的长局目标与后续项目如实保留；不将本轮计为已满 9 小时，也不承诺全游戏或稳定 30/60 FPS。标题或单张场景帧率不能代表长时间性能。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn"&gt;macnativegames-pro 节点连通性、存活性探测与防作弊指标&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+</feed>

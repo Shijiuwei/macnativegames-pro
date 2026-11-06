@@ -1,0 +1,5 @@
+title: "macnativegames-pro"
+description: "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own game."
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links

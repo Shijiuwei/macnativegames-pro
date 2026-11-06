@@ -1,0 +1,78 @@
+/* runtime/gamepad.m's controller type (key 6): the cycle, the saved controller-type.txt next to controls.txt and reading it
+   back at the next start. The real file is compiled in; no controller is needed (GameController lists none). */
+#include "../../runtime/gamepad.m"
+
+_Noreturn void runtime_fail(const char *message) { fprintf(stderr, "FAIL: %s\n", message); exit(1); }
+uint64_t runtime_now_ns(void) { return 0; }
+void runtime_feedback_attach(GCController *controller) { (void)controller; }
+void runtime_feedback_detach(GCController *controller) { (void)controller; }
+void runtime_feedback_quiet(void) {}
+void runtime_input_mouse(int button, int down) { (void)button; (void)down; }   /* runtime/input.c: the keyboard and mouse layout */
+int runtime_gyro_enabled(void) { return 0; }
+void runtime_motion_mouse(int on) { (void)on; }
+void runtime_motion_feed_mouse(const double acc[3], const double gyro[3], uint64_t now) { (void)acc; (void)gyro; (void)now; }
+uint64_t runtime_keyboard_buttons(void) { return 0; }
+
+static int failures, checked;
+static void check(int ok, const char *what) { checked++; if (!ok) { failures++; fprintf(stderr, "FAIL: %s\n", what); } }
+static void write_text(const char *path, const char *text) { FILE *f = fopen(path, "w"); fputs(text, f); fclose(f); }
+static int file_says(const char *path, const char *text) {
+    char got[64] = {0}; FILE *f = fopen(path, "r"); if (!f) return 0;
+    size_t n = fread(got, 1, sizeof got - 1, f); fclose(f); got[n] = 0; return !strcmp(got, text);
+}
+
+int main(int argc, char **argv) { @autoreleasepool {
+    if (argc != 2) { fprintf(stderr, "usage: probe <empty folder>\n"); return 2; }
+    char controls[1024], saved[1100];
+    snprintf(controls, sizeof controls, "%s/controls.txt", argv[1]);
+    snprintf(saved, sizeof saved, "%s/controller-type.txt", argv[1]);
+
+    unsetenv("TOTK_CONTROLS");
+    int detected = 7;
+    check(runtime_gamepad_type(&detected) == GAMEPAD_TYPE_AUTO && detected == -1, "starts at auto; no controller: detected -1");
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_XBOX) == GAMEPAD_TYPE_XBOX && access(saved, F_OK) != 0, "without TOTK_CONTROLS nothing is saved");
+
+    setenv("TOTK_CONTROLS", controls, 1);
+    atomic_store(&controllerType, GAMEPAD_TYPE_AUTO);
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_XBOX) == GAMEPAD_TYPE_XBOX && file_says(saved, "xbox\n"), "settings: Xbox, saved");
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_PLAYSTATION) == GAMEPAD_TYPE_PLAYSTATION && file_says(saved, "playstation\n"), "settings: PlayStation, saved");
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_SWITCH) == GAMEPAD_TYPE_SWITCH && file_says(saved, "switch\n"), "settings: Switch, saved");
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_COUNT) == GAMEPAD_TYPE_SWITCH && runtime_gamepad_type_set(-1) == GAMEPAD_TYPE_SWITCH, "not a type: unchanged");
+    check(access(saved, F_OK) == 0 && runtime_gamepad_type(NULL) == GAMEPAD_TYPE_SWITCH, "the type holds");
+
+    atomic_store(&controllerType, GAMEPAD_TYPE_AUTO); load_controller_type();
+    check(runtime_gamepad_type(NULL) == GAMEPAD_TYPE_SWITCH, "the next start reads the saved type");
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_AUTO) == GAMEPAD_TYPE_AUTO && file_says(saved, "auto\n"), "settings back to auto, saved");
+
+    write_text(saved, "dualsense\n");
+    atomic_store(&controllerType, GAMEPAD_TYPE_AUTO); load_controller_type();
+    check(runtime_gamepad_type(NULL) == GAMEPAD_TYPE_AUTO, "a word that is not a type: auto");
+    unlink(saved); load_controller_type();
+    check(runtime_gamepad_type(NULL) == GAMEPAD_TYPE_AUTO, "no file: auto");
+
+    setenv("TOTK_CONTROLS", "/nonexistent-folder-for-probe/controls.txt", 1);
+    check(runtime_gamepad_type_set(GAMEPAD_TYPE_XBOX) == GAMEPAD_TYPE_XBOX, "a folder that cannot be written: the type still changes for this run");
+
+    /* A real GameController snapshot needs no hardware. Exercise the OS preference and its scope; snapshots are not
+       in GCController.controllers, so apply the per-controller refresh explicitly after changing the mapping. */
+    controller_map_default(controllerMap, controllerModes);
+    GCController *snapshot = [GCController controllerWithExtendedGamepad];
+    GCExtendedGamepad *pad = snapshot.extendedGamepad;
+    check(pad.buttonOptions != nil, "snapshot has an Options button");
+    GCSystemGestureState menu = pad.buttonMenu.preferredSystemGestureState, home = pad.buttonHome.preferredSystemGestureState;
+    attach_gamepad(snapshot);
+    check(pad.buttonOptions.preferredSystemGestureState == GCSystemGestureStateDisabled, "attach: mapped Options requests immediate input");
+    check(pad.buttonMenu.preferredSystemGestureState == menu && pad.buttonHome.preferredSystemGestureState == home, "Menu and Home gestures unchanged");
+    controllerMap[11] = 0; gamepad_options_gesture(pad);
+    check(pad.buttonOptions.preferredSystemGestureState == GCSystemGestureStateEnabled, "unmapped Options restores system gestures");
+    atomic_store(&settingsButton, 11); gamepad_options_gesture(pad);
+    check(pad.buttonOptions.preferredSystemGestureState == GCSystemGestureStateDisabled, "Options used by the settings panel is immediate too");
+    atomic_store(&settingsButton, -1); gamepad_options_gesture(pad);
+    check(pad.buttonOptions.preferredSystemGestureState == GCSystemGestureStateEnabled, "unmapped from game and panel restores system gestures");
+    controller_map_default(controllerMap, controllerModes); attach_gamepad(snapshot);
+    check(pad.buttonOptions.preferredSystemGestureState == GCSystemGestureStateDisabled, "reattach applies the mapped preference again");
+    gamepad_options_gesture(nil);
+
+    printf("{\"status\":\"%s\",\"probe\":\"gamepad-type\",\"checked\":%d,\"failures\":%d}\n", failures ? "fail" : "pass", checked, failures);
+    return failures != 0;
+}}
